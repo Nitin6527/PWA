@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Nitin6527/PWA/static/css/main.448b9b6d.css",
+    "main.js": "/Nitin6527/PWA/static/js/main.a15d920b.js",
+    "static/media/SEGA.woff": "/Nitin6527/PWA/static/media/SEGA.47b4bfa94ef243af4a5b.woff",
+    "index.html": "/Nitin6527/PWA/index.html",
+    "main.448b9b6d.css.map": "/Nitin6527/PWA/static/css/main.448b9b6d.css.map",
+    "main.a15d920b.js.map": "/Nitin6527/PWA/static/js/main.a15d920b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.448b9b6d.css",
+    "static/js/main.a15d920b.js"
+  ]
+}
