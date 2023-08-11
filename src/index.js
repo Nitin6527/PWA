@@ -6,7 +6,7 @@ import { Provider } from "react-redux";
 import thunkMiddleware from "redux-thunk";
 import { createLogger } from "redux-logger";
 import "tachyons";
-import App from "./containers/App";
+// import App from "./containers/App";
 import { requestRobots, searchRobots } from "./reducers";
 import * as serviceWorkerRegistration from "./serviceWorkerRegistration";
 import "./index.css";
