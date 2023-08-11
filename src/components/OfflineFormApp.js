@@ -16,6 +16,12 @@ const OfflineFormApp = () => {
     };
   }, []);
 
+  useEffect(() => {
+    if (navigator.onLine) {
+      return submitData(offlineData);
+    }
+  }, [offlineData]);
+
   const handleInputChange = (event) => {
     const { name, value } = event.target;
     if (name === "name") {
@@ -41,6 +47,9 @@ const OfflineFormApp = () => {
   const submitData = (data) => {
     // Simulate data submission logic here
     console.log("Submitting data:", data);
+    fetch("https://fakestoreapi.com/products")
+      .then((res) => res.json())
+      .then((json) => console.log(json));
   };
 
   const submitOfflineData = () => {
