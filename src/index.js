@@ -10,6 +10,7 @@ import App from "./containers/App";
 import { requestRobots, searchRobots } from "./reducers";
 import * as serviceWorkerRegistration from "./serviceWorkerRegistration";
 import "./index.css";
+import OfflineFormApp from "./components/OfflineFormApp";
 
 const logger = createLogger();
 
@@ -23,7 +24,7 @@ const store = createStore(
 const root = createRoot(document.getElementById("root"));
 root.render(
   <Provider store={store}>
-    <App />
+    <OfflineFormApp />
   </Provider>
 );
 
