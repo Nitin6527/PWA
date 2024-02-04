@@ -1,23 +1,14 @@
-import React from 'react';
-import Card from './Card';
+import React from "react";
+import Card from "./Card";
 
-const CardList = ({ robots }) => {
+const CardList = ({ products }) => {
   return (
-    <div>
-      {
-        robots.map((user, i) => {
-          return (
-            <Card
-              key={i}
-              id={robots[i].id}
-              name={robots[i].name}
-              email={robots[i].email}
-              />
-          );
-        })
-      }
+    <div className="flex justify-center items-center max-w-[80%] overflow-auto">
+      {products.map((product) => {
+        return <Card key={product.id} product={product} />;
+      })}
     </div>
   );
-}
+};
 
 export default CardList;
